@@ -1,0 +1,14 @@
+1. 의존성 정보 설치
+  $ sudo apt-get install libqt4-dev
+
+2. API Source Code 다운로드
+
+3. lib파일 복사
+  $ sudo cp /DobotDll_64/. /usr/lib/x86_64-linux-gnu/
+
+4. PATH 설정
+  - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:DOBOT_LIB_PATH
+
+4. 코드 작성
+5. 빌드
+  $ g++ -std=c++11 <CPP파일명> -o <생성할 파일명> -l DobotDll
